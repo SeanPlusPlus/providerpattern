@@ -18,7 +18,7 @@ export default function Home () {
 
         <div>
           <pre>
-            Single Provider
+            Multiple Providers
           </pre>
         </div>
 
