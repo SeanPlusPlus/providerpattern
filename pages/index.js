@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { ItemListProvider } from './ItemListContext'
-import ItemList from './ItemList'
+import { MovieListProvider } from './MovieListContext'
+import MovieList from './MovieList'
 
 export default function Home () {
   return (
@@ -33,9 +33,9 @@ export default function Home () {
           </h3>
         </div>
 
-        <ItemListProvider>
-          <ItemList />
-        </ItemListProvider>
+        <MovieListProvider>
+          <MovieList />
+        </MovieListProvider>
 
       </main>
     </>

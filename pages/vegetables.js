@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import { ItemListProvider } from './ItemListContext'
-import ItemList from './ItemList'
-import vegetables from '../data/vegetables'
+import { VegetableListProvider } from './VegetableListContext'
+import VegetableList from './VegetableList'
 
 export default function Home () {
   return (
@@ -34,11 +33,9 @@ export default function Home () {
           </h3>
         </div>
 
-        <ItemListProvider
-          initialItems={vegetables}
-        >
-          <ItemList />
-        </ItemListProvider>
+        <VegetableListProvider>
+          <VegetableList />
+        </VegetableListProvider>
 
       </main>
     </>
